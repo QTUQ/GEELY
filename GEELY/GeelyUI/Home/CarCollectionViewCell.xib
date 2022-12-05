@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="409" height="463"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-sL-VbE">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-sL-VbE" customClass="CarCollectionViewCell" customModule="GEELY">
                         <rect key="frame" x="16" y="75" width="377" height="355"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPc-sY-0nK">

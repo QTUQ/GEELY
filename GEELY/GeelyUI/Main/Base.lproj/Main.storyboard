@@ -176,9 +176,8 @@
                                 <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" name="Violet"/>
                             </pageControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-be-kT3">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-be-kT3">
                                 <rect key="frame" x="0.0" y="633" width="393" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IjA-9P-y8Z">
                                     <size key="itemSize" width="128" height="128"/>
@@ -222,8 +221,10 @@
                         <viewLayoutGuide key="safeArea" id="0dB-HG-Rxp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aXC-be-kT3" firstAttribute="centerX" secondItem="ITW-kd-kQE" secondAttribute="centerX" id="0xX-lX-TMO"/>
                             <constraint firstItem="0dB-HG-Rxp" firstAttribute="trailing" secondItem="ohn-2z-fJe" secondAttribute="trailing" constant="139" id="5Un-4l-OKo"/>
                             <constraint firstItem="ohn-2z-fJe" firstAttribute="top" secondItem="ITW-kd-kQE" secondAttribute="topMargin" constant="438" id="F3S-Bx-QN4"/>
+                            <constraint firstItem="aXC-be-kT3" firstAttribute="centerY" secondItem="ITW-kd-kQE" secondAttribute="centerY" id="FVm-1p-iob"/>
                             <constraint firstItem="ohn-2z-fJe" firstAttribute="top" secondItem="0dB-HG-Rxp" secondAttribute="top" constant="438" id="W0k-uC-O1b"/>
                             <constraint firstItem="ohn-2z-fJe" firstAttribute="leading" secondItem="0dB-HG-Rxp" secondAttribute="leading" constant="117" id="tVc-MS-Wqc"/>
                         </constraints>
@@ -252,8 +253,8 @@
         <image name="Group 12747" width="21" height="21.333333969116211"/>
         <image name="Group 12748" width="21.333333969116211" height="21"/>
         <image name="Services icon" width="19" height="19"/>
-        <image name="bell" catalog="system" width="125" height="128"/>
         <image name="bell" width="128" height="128"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
         <image name="home icon" width="21.666666030883789" height="19.333333969116211"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <namedColor name="LightBlue">

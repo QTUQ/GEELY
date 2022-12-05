@@ -8,8 +8,9 @@
 import UIKit
 import Alamofire
 
-//TODO: Move delegate as extension
+
 class HomeViewController: UIViewController {
+    
     
     // MARK: -Variables
     @IBOutlet weak var carscollectionView: UICollectionView!
@@ -19,6 +20,7 @@ class HomeViewController: UIViewController {
     // MARK: -Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        APIHandler.sharedInstance.fetchingData()
         setUPnaviogation()
         setUpCollectioViews()
         pageControll()
