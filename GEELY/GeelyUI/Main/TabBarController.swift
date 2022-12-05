@@ -8,7 +8,7 @@ import SwiftUI
 import UIKit
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
-    
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self

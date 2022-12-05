@@ -9,21 +9,21 @@ import UIKit
 import Alamofire
 
 //TODO: Move delegate as extension
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeViewController: UIViewController {
     
     // MARK: -Variables
     @IBOutlet weak var carscollectionView: UICollectionView!
     @IBOutlet weak var sevicesColl: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    // MARK: -
+    // MARK: -Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUPnaviogation()
         setUpCollectioViews()
         pageControll()
     }
-    //MARK: - setUp Navigation
+    //MARK: -setUp Navigation
     func setUPnaviogation() {
         navigationController?.navigationBar.layer.masksToBounds = false
         navigationController?.navigationBar.layer.shadowColor = UIColor(named: "shadow")?.cgColor
@@ -31,17 +31,34 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: -10)
         navigationController?.navigationBar.layer.cornerRadius = 10
     }
-    // MARK: -setUp CollectionView
+    // MARK: -setUp CollectionViews
     private func setUpCollectioViews() {
+        carscollectionView.layer.cornerRadius = 40
         sevicesColl.register(CustomCell1.self, forCellWithReuseIdentifier: CustomCell1.identifier)
         carscollectionView.register(CustomCell2.self, forCellWithReuseIdentifier: CustomCell2.id)
-        carscollectionView.layer.cornerRadius = 40
         sevicesColl.dataSource = self
         sevicesColl.delegate = self
         carscollectionView.dataSource = self
         carscollectionView.delegate = self
     }
-    // MARK: -CollectionView datasource
+    
+    // MARK: -setUp the page control
+    private func pageControll() {
+        carscollectionView.isPagingEnabled = true
+        pageControl.numberOfPages = 4
+    }
+    // to tell which cell the UICollectionView stops on (CV = SV)
+    // calculate the width of collection cell and the index for the current page.
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        pageControl?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+    }
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        pageControl?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+    }
+}
+ //MARK: -collectionView delegate & datasource
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == sevicesColl {
             return 5
@@ -59,21 +76,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             return cell2
         }
     }
-    // MARK: -set the page control
-    private func pageControll() {
-        carscollectionView.isPagingEnabled = true
-        pageControl.numberOfPages = 4
-    }
-    // to tell which cell the UICollectionView stops on (CV = SV)
-    // calculate the width of collection cell and the index for the current page.
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        pageControl?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
-    }
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        pageControl?.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
-    }
 }
-// MARK: -ColllectionView Delegate
+// MARK: -ColllectionView flowlayout Delegate
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         collectionView.showsHorizontalScrollIndicator = false
