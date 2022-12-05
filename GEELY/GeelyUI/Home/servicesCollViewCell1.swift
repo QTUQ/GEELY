@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CustomCell1: UICollectionViewCell {
+class servicesCollViewCell1: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

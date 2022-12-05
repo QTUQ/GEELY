@@ -22,7 +22,7 @@
 		D190D13E292CAC6900B3E5C0 /* GEELYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D13D292CAC6900B3E5C0 /* GEELYUITestsLaunchTests.swift */; };
 		D190D14E292CB3E700B3E5C0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D14D292CB3E700B3E5C0 /* TabBarController.swift */; };
 		D190D150292CC3CD00B3E5C0 /* CostumTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D14F292CC3CD00B3E5C0 /* CostumTabBar.swift */; };
-		D1C6FE03292E20AE00C01390 /* CustomCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6FE02292E20AE00C01390 /* CustomCell1.swift */; };
+		D1C6FE03292E20AE00C01390 /* servicesCollViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6FE02292E20AE00C01390 /* servicesCollViewCell1.swift */; };
 		D1C6FE0B292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1C6FE0A292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf */; };
 		D1C6FE13292F991700C01390 /* CustomCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6FE12292F991700C01390 /* CustomCell2.swift */; };
 		D1FEE0D5293D08940013543A /* PTSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1FEE0D4293D08940013543A /* PTSerif-Regular.ttf */; };
@@ -69,7 +69,7 @@
 		D190D13D292CAC6900B3E5C0 /* GEELYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEELYUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D190D14D292CB3E700B3E5C0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D190D14F292CC3CD00B3E5C0 /* CostumTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumTabBar.swift; sourceTree = "<group>"; };
-		D1C6FE02292E20AE00C01390 /* CustomCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell1.swift; sourceTree = "<group>"; };
+		D1C6FE02292E20AE00C01390 /* servicesCollViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesCollViewCell1.swift; sourceTree = "<group>"; };
 		D1C6FE0A292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansArabic_Condensed-Regular.ttf"; sourceTree = "<group>"; };
 		D1C6FE12292F991700C01390 /* CustomCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell2.swift; sourceTree = "<group>"; };
 		D1FEE0D4293D08940013543A /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PTSerif-Regular.ttf"; path = "../../../../.Trash/GEELYApp/GEELYApp/fonts/PTSerif-Regular.ttf"; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				D190D11E292CAC6800B3E5C0 /* HomeViewController.swift */,
-				D1C6FE02292E20AE00C01390 /* CustomCell1.swift */,
+				D1C6FE02292E20AE00C01390 /* servicesCollViewCell1.swift */,
 				D1C6FE12292F991700C01390 /* CustomCell2.swift */,
 				D154CCC6293DDB8600986B57 /* ServicesCollectionViewCell.xib */,
 			);
@@ -485,7 +485,7 @@
 				D190D11B292CAC6800B3E5C0 /* AppDelegate.swift in Sources */,
 				D190D150292CC3CD00B3E5C0 /* CostumTabBar.swift in Sources */,
 				D190D14E292CB3E700B3E5C0 /* TabBarController.swift in Sources */,
-				D1C6FE03292E20AE00C01390 /* CustomCell1.swift in Sources */,
+				D1C6FE03292E20AE00C01390 /* servicesCollViewCell1.swift in Sources */,
 				D190D11D292CAC6800B3E5C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
