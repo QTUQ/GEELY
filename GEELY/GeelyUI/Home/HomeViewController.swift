@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
     private func setUpCollectioViews() {
         carscollectionView.layer.cornerRadius = 40
         sevicesColl.register(servicesCollViewCell1.self, forCellWithReuseIdentifier: servicesCollViewCell1.identifier)
-        carscollectionView.register(CustomCell2.self, forCellWithReuseIdentifier: CustomCell2.id)
+        carscollectionView.register(CarCollectionViewCell.self, forCellWithReuseIdentifier: CarCollectionViewCell.id)
         sevicesColl.dataSource = self
         sevicesColl.delegate = self
         carscollectionView.dataSource = self
@@ -72,7 +72,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.configure(label: "custom\(indexPath.row)")
             return cell }
         else {
-            let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCell2.id, for: indexPath) as! CustomCell2
+            let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: CarCollectionViewCell.id, for: indexPath) as! CarCollectionViewCell
             return cell2
         }
     }
