@@ -10,7 +10,7 @@ import UIKit
 class CarCollectionViewCell: UICollectionViewCell {
     
     static let id = "CarCollectionViewCell"
-    
+    // MARK: -Variables
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -18,12 +18,14 @@ class CarCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     @IBOutlet weak var progressView: UIProgressView!
+    // MARK: -initi the nib
     override func awakeFromNib() {
         super.awakeFromNib()
         setProgressView()
         labelOne()
         labelTwo()
         labelThree()
+    // MARK: -method manipulation
     }
     func labelOne() {
         label1.font = UIFont(name: "PTSerif-Regular", size: 15)

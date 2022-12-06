@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class servicesCollViewCell1: UICollectionViewCell {
-    
+    //MARK: - initi the views
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.backgroundColor = .quaternarySystemFill
@@ -43,7 +43,7 @@ class servicesCollViewCell1: UICollectionViewCell {
         return mlabel
     }()
    
-    //MARK: - subViews Manpiulation
+    //MARK: - subViews Manipulation
     override func layoutSubviews() {
         super.layoutSubviews()
         mlabel.frame = CGRect(x: 5, y: contentView.frame.size.height-60, width: contentView.frame.size.width-10, height: 50)
