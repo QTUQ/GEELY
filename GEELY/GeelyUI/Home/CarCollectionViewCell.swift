@@ -9,8 +9,8 @@ import UIKit
 
 class CarCollectionViewCell: UICollectionViewCell {
     
-    static let id = "CustomCell2"
-
+    static let id = "CarCollectionViewCell"
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
@@ -25,32 +25,28 @@ class CarCollectionViewCell: UICollectionViewCell {
         labelTwo()
         labelThree()
     }
-    
     func labelOne() {
-        label1.textAlignment = .center
-        label3.font = UIFont(name: "PTSerif-Regular", size: 15)
-        label3.sizeToFit()
+        label1.font = UIFont(name: "PTSerif-Regular", size: 15)
     }
     func labelTwo() {
-        label3.textAlignment = .center
-        label3.font = UIFont(name: "PTSerif-Regular", size: 15)
-        label3.sizeToFit()
+        label2.clipsToBounds = true
+        label2.layer.cornerRadius = 15
+        label2.font = UIFont(name: "PTSerif-Regular", size: 15)
     }
     func labelThree() {
-        label3.textAlignment = .center
+        label3.clipsToBounds = true
         label3.font = UIFont(name: "PTSerif-Regular", size: 15)
-        label3.sizeToFit()
-        label2.layer.cornerRadius = 15
+        label3.layer.cornerRadius = 15
     }
     
     // MARK: -set the progress View
-     func setProgressView() {
+    func setProgressView() {
         progressView.trackTintColor = .quaternarySystemFill
         progressView.clipsToBounds = true
         progressView.layer.cornerRadius = 5
         progressView.progress = 0.7
         progressView.semanticContentAttribute = .forceRightToLeft
-        progressView.frame = CGRect(x: 66, y: contentView.frame.size.height/1.53, width: 200, height: 30)
+        progressView.frame = CGRect(x: 66, y: contentView.frame.size.height/1.6, width: 200, height: 30)
         progressView.transform = CGAffineTransform(scaleX: 1.3, y: 2.6)
         let gradientImage = UIImage.gradientImage(with:progressView.frame,colors:[UIColor(named: "Blue")!.cgColor, UIColor(named:"Violet")!.cgColor],locations: nil)
         progressView.progressImage = gradientImage!

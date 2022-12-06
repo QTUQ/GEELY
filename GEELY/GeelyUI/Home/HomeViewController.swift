@@ -10,8 +10,7 @@ import Alamofire
 
 
 class HomeViewController: UIViewController {
-    
-    
+    let CarCollectionVoewCell = "CarCollectionViewCell"
     // MARK: -Variables
     @IBOutlet weak var carscollectionView: UICollectionView!
     @IBOutlet weak var sevicesColl: UICollectionView!
@@ -37,7 +36,9 @@ class HomeViewController: UIViewController {
     private func setUpCollectioViews() {
         carscollectionView.layer.cornerRadius = 40
         sevicesColl.register(servicesCollViewCell1.self, forCellWithReuseIdentifier: servicesCollViewCell1.identifier)
-        carscollectionView.register(CarCollectionViewCell.self, forCellWithReuseIdentifier: CarCollectionViewCell.id)
+//        carscollectionView.register(CarCollectionViewCell.self, forCellWithReuseIdentifier: CarCollectionViewCell.id)
+        let nib = UINib(nibName: CarCollectionVoewCell,bundle: nil)
+        self.carscollectionView.register(nib, forCellWithReuseIdentifier: CarCollectionViewCell.id)
         sevicesColl.dataSource = self
         sevicesColl.delegate = self
         carscollectionView.dataSource = self
