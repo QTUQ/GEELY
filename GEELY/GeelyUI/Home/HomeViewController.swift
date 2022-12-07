@@ -10,12 +10,12 @@ import Alamofire
 
 
 class HomeViewController: UIViewController {
-    let CarCollectionVoewCell = "CarCollectionViewCell"
     // MARK: -Variables
     @IBOutlet weak var carscollectionView: UICollectionView!
     @IBOutlet weak var sevicesColl: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
+    let CarCollectionVoewCell = "CarCollectionViewCell"
+    var resultes = Resultes(body: [])
     // MARK: -Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,6 @@ class HomeViewController: UIViewController {
     private func setUpCollectioViews() {
         carscollectionView.layer.cornerRadius = 40
         sevicesColl.register(servicesCollViewCell1.self, forCellWithReuseIdentifier: servicesCollViewCell1.identifier)
-//        carscollectionView.register(CarCollectionViewCell.self, forCellWithReuseIdentifier: CarCollectionViewCell.id)
         let nib = UINib(nibName: CarCollectionVoewCell,bundle: nil)
         self.carscollectionView.register(nib, forCellWithReuseIdentifier: CarCollectionViewCell.id)
         sevicesColl.dataSource = self
@@ -65,9 +64,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == sevicesColl {
             return 5
+           
         }
-        
+//        DispatchQueue.main.async {
+//            self.carscollectionView.reloadData()
+//        }
         return 4
+//        return APIHandler.sharedInstance.post.count
+
+        
+        
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == sevicesColl {
@@ -76,6 +82,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell }
         else {
             let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: CarCollectionViewCell.id, for: indexPath) as! CarCollectionViewCell
+//            cell2.label1.text = APIHandler.sharedInstance.post[indexPath.row].videoLobbyName
+//            cell2.label3.text = APIHandler.sharedInstance.post[indexPath.row].videoLobbyDescription
             return cell2
         }
     }

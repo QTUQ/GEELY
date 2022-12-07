@@ -7,21 +7,19 @@
 
 import Foundation
 
-struct Resultes: Decodable {
+struct Resultes: Codable {
     let body: [posts]
 }
-
-struct posts: Decodable {
+struct posts: Codable {
     let id: String
     let videoLobbyName: String
     let videoLobbyDescription: String
     let url: String?
-    let image: [images]
-    
-}
-
-struct images: Decodable {
-    let imageUrl: String
+    let image: images
     let lobbyCategoryId: Int
     let isNewTab: Bool
+}
+
+struct images: Codable {
+    let imageUrl: String
 }

@@ -18,9 +18,11 @@ class CarCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     @IBOutlet weak var progressView: UIProgressView!
+    var resultes = Resultes(body: [])
     // MARK: -initi the nib
     override func awakeFromNib() {
         super.awakeFromNib()
+//        APIHandler.sharedInstance.fetchingData()
         setProgressView()
         labelOne()
         labelTwo()
@@ -29,6 +31,8 @@ class CarCollectionViewCell: UICollectionViewCell {
     }
     func labelOne() {
         label1.font = UIFont(name: "PTSerif-Regular", size: 15)
+        label1.numberOfLines = 2
+      
     }
     func labelTwo() {
         label2.clipsToBounds = true
@@ -39,6 +43,14 @@ class CarCollectionViewCell: UICollectionViewCell {
         label3.clipsToBounds = true
         label3.font = UIFont(name: "PTSerif-Regular", size: 15)
         label3.layer.cornerRadius = 15
+        label2.numberOfLines = 2
+        let gradientLayer = CAGradientLayer()
+                gradientLayer.frame = CGRect(x: 317, y: -18, width: 5, height: 110 )
+                gradientLayer.colors = [UIColor(named: "Blue")!.cgColor, UIColor(named:"Violet")!.cgColor]
+                gradientLayer.startPoint = CGPoint(x: 0.7,y: 0.3)
+                gradientLayer.endPoint = CGPoint(x: 0.7,y: 0.90)
+                gradientLayer.cornerRadius = 20
+        label3.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     // MARK: -set the progress View

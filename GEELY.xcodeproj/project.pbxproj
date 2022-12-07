@@ -168,8 +168,8 @@
 			children = (
 				D190D11A292CAC6800B3E5C0 /* AppDelegate.swift */,
 				D190D11C292CAC6800B3E5C0 /* SceneDelegate.swift */,
-				D154CD10293E0DB600986B57 /* Servcies */,
 				D1C6FE04292E3D1E00C01390 /* fonts */,
+				D154CD10293E0DB600986B57 /* Servcies */,
 				D190D14A292CACED00B3E5C0 /* GeelyUI */,
 				D190D123292CAC6900B3E5C0 /* Assets.xcassets */,
 				D190D128292CAC6900B3E5C0 /* Info.plist */,
