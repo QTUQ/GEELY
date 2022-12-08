@@ -9,7 +9,7 @@ import UIKit
 
 class CarCollectionViewCell: UICollectionViewCell {
     
-    static let id = "CarCollectionViewCell"
+    
     // MARK: -Variables
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
@@ -18,7 +18,7 @@ class CarCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     @IBOutlet weak var progressView: UIProgressView!
-    var resultes = Resultes(body: [])
+    static let id = "CarCollectionViewCell"
     // MARK: -initi the nib
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -68,7 +68,7 @@ class CarCollectionViewCell: UICollectionViewCell {
     }
 }
 // MARK: -convert gradientLayer to image
-fileprivate extension UIImage {
+ extension UIImage {
     static func gradientImage(with bounds: CGRect,colors: [CGColor],locations: [NSNumber]?) -> UIImage? {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds

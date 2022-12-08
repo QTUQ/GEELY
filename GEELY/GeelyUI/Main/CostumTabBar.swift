@@ -14,11 +14,11 @@ class costumTabBar: UITabBar {
     private func addShape() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
-        shapeLayer.fillColor = UIColor.quaternarySystemFill.cgColor
+        shapeLayer.fillColor = UIColor.white.cgColor
         shapeLayer.lineWidth = 1.0
         shapeLayer.shadowOffset = CGSize(width: 0, height: -10)
         shapeLayer.shadowRadius = 10
-        shapeLayer.shadowColor = UIColor.black.cgColor
+        shapeLayer.shadowColor = UIColor(named: "shadow")?.cgColor
         shapeLayer.shadowOpacity = 40
         if let oldShapeLayer = self.shapelayer {
             self.layer.replaceSublayer(oldShapeLayer, with: shapeLayer)

@@ -21,5 +21,6 @@ struct posts: Codable {
 }
 
 struct images: Codable {
-    let imageUrl: String
+    let imageUrl: String?
 }
+

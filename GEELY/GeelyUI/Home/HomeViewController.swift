@@ -15,11 +15,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var sevicesColl: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     let CarCollectionVoewCell = "CarCollectionViewCell"
-    var resultes = Resultes(body: [])
     // MARK: -Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIHandler.sharedInstance.fetchingData()
         setUPnaviogation()
         setUpCollectioViews()
         pageControll()
@@ -64,16 +62,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == sevicesColl {
             return 5
-           
         }
-//        DispatchQueue.main.async {
-//            self.carscollectionView.reloadData()
-//        }
         return 4
-//        return APIHandler.sharedInstance.post.count
-
-        
-        
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == sevicesColl {
@@ -82,8 +72,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell }
         else {
             let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: CarCollectionViewCell.id, for: indexPath) as! CarCollectionViewCell
-//            cell2.label1.text = APIHandler.sharedInstance.post[indexPath.row].videoLobbyName
-//            cell2.label3.text = APIHandler.sharedInstance.post[indexPath.row].videoLobbyDescription
             return cell2
         }
     }

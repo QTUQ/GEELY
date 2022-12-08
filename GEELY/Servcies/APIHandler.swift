@@ -10,17 +10,17 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class APIHandler: HomeViewController {
-   
+class APIHandler {
+    //MARK: -Variables
     static let sharedInstance = APIHandler()
     var post = [posts]()
+    //MARK: -calling the api, fetching the data 
     func fetchingData() {
         let url = "https://testservice.geely.co.il///api/videos/lobbyVideos"
         Alamofire.request(url, method: .get).responseJSON {response in // closure executed when the request completes.
             guard let data = response.data else { return }
             do {
                 let result = try JSONDecoder().decode(Resultes.self, from: data)
-               
                 DispatchQueue.main.async {
                     self.post = result.body
                     }
@@ -29,7 +29,6 @@ class APIHandler: HomeViewController {
             catch {
                 print("error decodinh \(error)")
             }
-            
         }.resume()
     }
 }

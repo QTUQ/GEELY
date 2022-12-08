@@ -114,13 +114,24 @@
                         <color key="badgeColor" systemColor="labelColor"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="30" vertical="0.0"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="duy-0M-hCY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="duy-0M-hCY">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" name="shadow"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" name="shadow"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4UF-lK-YCC" kind="relationship" relationship="rootViewController" id="XKw-iI-Mkf"/>
+                        <segue destination="RAd-qN-QAs" kind="relationship" relationship="rootViewController" id="uC1-pN-4JZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ux9-4v-5t5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -147,19 +158,37 @@
             </objects>
             <point key="canvasLocation" x="2396" y="830"/>
         </scene>
-        <!--three-->
-        <scene sceneID="aUI-Uo-T1W">
+        <!--Car Detailed Controller-->
+        <scene sceneID="hjh-2W-eXM">
             <objects>
-                <viewController id="4UF-lK-YCC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wJg-bl-SSH">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <tableViewController id="RAd-qN-QAs" customClass="CarDetailedController" customModule="GEELY" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7us-yk-j3K">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="v2S-Cy-FBO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="three" id="bba-t8-POa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R0d-YW-dlo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="I3K-Ps-p12">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I3K-Ps-p12" id="ymQ-qq-gem">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <gestureRecognizers/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="RAd-qN-QAs" id="Zh1-Q0-lTu"/>
+                            <outlet property="delegate" destination="RAd-qN-QAs" id="Xpn-Qa-CRU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Wqo-9i-d2y"/>
+                    <connections>
+                        <outlet property="CarDetTableView" destination="7us-yk-j3K" id="Oe9-Uw-gDb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r39-08-Uqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1624" y="1580"/>
         </scene>
@@ -263,6 +292,9 @@
         </namedColor>
         <namedColor name="Violet">
             <color red="0.63499999046325684" green="0.2199999988079071" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="shadow">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
