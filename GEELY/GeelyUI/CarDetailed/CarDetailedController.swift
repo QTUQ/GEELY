@@ -7,15 +7,20 @@
 
 import UIKit
 
-
-class CarDetailedController: UITableViewController {
+class CarDetailedController: UITableViewController  {
+    
     //MARK: -Variables
     @IBOutlet weak var CarDetTableView: UITableView!
     let RefreshControl = UIRefreshControl()
     //MARK: -LifeCycl
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIHandler.sharedInstance.fetchingData()
+        APIHandler.sharedInstance.fetchingData { data in
+            APIHandler.sharedInstance.post = data
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
         CarDetaileCell()
         refreshControll()
     }
@@ -29,7 +34,6 @@ class CarDetailedController: UITableViewController {
         CarDetTableView.showsVerticalScrollIndicator = true
         CarDetTableView.separatorStyle = .singleLine
     }
-    
     //MARK: -setUp the RefreshControll
     func refreshControll() {
         RefreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
@@ -45,19 +49,27 @@ class CarDetailedController: UITableViewController {
     }
     //MARK: -tableView DataSource Method
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        self.CarDetTableView.reloadData()
         return APIHandler.sharedInstance.post.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CarDeTableViewCell.id, for: indexPath) as! CarDeTableViewCell
-        cell.LabelName.text = APIHandler.sharedInstance.post[indexPath.row].videoLobbyName
-        cell.LabelDescription.text = APIHandler.sharedInstance.post[indexPath.row].videoLobbyDescription
-        let link =  APIHandler.sharedInstance.post[indexPath.row].image.imageUrl!
+        let carData = APIHandler.sharedInstance.post[indexPath.row]
+        cell.LabelName.text = carData.videoLobbyName
+        cell.LabelDescription.text = carData.videoLobbyDescription
+        let link =  carData.image.imageUrl!
         cell.CarImage.downloaded(from: link)
         return cell
     }
     //MARK: -tableView delegate Method
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if let cell = tableView.cellForRow(at: indexPath) as? CarDeTableViewCell {
+            guard let urlVideo =  URL(string: APIHandler.sharedInstance.post[indexPath.row].url ?? "") else {return}
+            let request = URLRequest(url: urlVideo)
+            cell.webView.isHidden = true
+            DispatchQueue.main.async {
+                cell.webView.load(request)
+            }
+        }
     }
 }

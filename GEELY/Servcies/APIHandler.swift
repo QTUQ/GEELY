@@ -14,8 +14,9 @@ class APIHandler {
     //MARK: -Variables
     static let sharedInstance = APIHandler()
     var post = [posts]()
-    //MARK: -calling the api, fetching the data 
-    func fetchingData() {
+    //MARK: -calling the api, fetching the data
+    //useing escaping clouser to load te table view data (to catch a network request-response that arrives later.)
+    func fetchingData(completion: @escaping ([posts]) -> ())  {
         let url = "https://testservice.geely.co.il///api/videos/lobbyVideos"
         Alamofire.request(url, method: .get).responseJSON {response in // closure executed when the request completes.
             guard let data = response.data else { return }
@@ -25,6 +26,7 @@ class APIHandler {
                     self.post = result.body
                     }
                 print(result)
+                completion(self.post)
             }
             catch {
                 print("error decodinh \(error)")

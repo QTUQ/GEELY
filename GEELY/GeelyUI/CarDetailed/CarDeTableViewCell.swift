@@ -6,17 +6,19 @@
 //
 
 import UIKit
-
+import WebKit
+import AVFoundation
 class CarDeTableViewCell: UITableViewCell {
     
     //MARK: -Variables
     static let id = "CarDeTableViewCell"
-    @IBOutlet weak var imageeView: UILabel!
+    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var CarImage: UIImageView!
     @IBOutlet weak var VideoImage: UIImageView!
     @IBOutlet weak var LabelName: UILabel!
     @IBOutlet weak var LabelDescription: UILabel!
-
+    let playerView = PlayerView()
+    static let sharedInstance = CarDeTableViewCell()
     override func awakeFromNib() {
         super.awakeFromNib()
         adjustLabels()
@@ -28,12 +30,14 @@ class CarDeTableViewCell: UITableViewCell {
         LabelDescription.font = UIFont(name: "PTSerif-Regular", size: 15)
         LabelDescription.numberOfLines = 2
         LabelName.font = UIFont.boldSystemFont(ofSize: 16)
+        playerView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(playerView)
     }
     func adjustImages() {
         VideoImage.clipsToBounds = true
-        imageeView.clipsToBounds = true
-        imageeView.layer.cornerRadius = 35
-        imageeView.layer.opacity = 0.6
+        webView.clipsToBounds = true
+        webView.layer.cornerRadius = 35
+        webView.layer.opacity = 0.6
         let VideoImagee = UIImage(systemName: "play.fill")
         VideoImage.image = VideoImagee!.maskWithGradientColor(color: UIColor.red)
     }
@@ -78,5 +82,25 @@ extension UIImage {
         else  {
             return nil
         }
+    }
+}
+
+class PlayerView: UIView {
+    var player: AVPlayer? {
+        get {
+            return playerLayer.player
+        }
+        set {
+            playerLayer.videoGravity = .resizeAspect
+            playerLayer.player = newValue
+        }
+    }
+
+    var playerLayer: AVPlayerLayer {
+        return layer as! AVPlayerLayer
+    }
+    
+    override static var layerClass: AnyClass {
+        return AVPlayerLayer.self
     }
 }

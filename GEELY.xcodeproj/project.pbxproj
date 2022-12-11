@@ -30,7 +30,6 @@
 		D190D150292CC3CD00B3E5C0 /* CostumTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D14F292CC3CD00B3E5C0 /* CostumTabBar.swift */; };
 		D1C6FE03292E20AE00C01390 /* servicesCollViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6FE02292E20AE00C01390 /* servicesCollViewCell1.swift */; };
 		D1C6FE0B292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1C6FE0A292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf */; };
-		D1FEE0D5293D08940013543A /* PTSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1FEE0D4293D08940013543A /* PTSerif-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +57,7 @@
 		78BB8FA711F0D79BD2AC16F4 /* Pods_GEELYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEELYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A81AABEB7DF79F677BF3E3 /* Pods_GEELY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEELY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CA181DE57E52F7CDD7C489 /* Pods_GEELY_GEELYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEELY_GEELYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1140AD72943536C0077C9BE /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PTSerif-Regular.ttf"; path = "../../../../Desktop/fonts/PT_Serif/PTSerif-Regular.ttf"; sourceTree = "<group>"; };
 		D154CD11293E0DC700986B57 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		D154CD13293E11BF00986B57 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D154CD15293F43C100986B57 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -82,7 +82,6 @@
 		D190D14F292CC3CD00B3E5C0 /* CostumTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumTabBar.swift; sourceTree = "<group>"; };
 		D1C6FE02292E20AE00C01390 /* servicesCollViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesCollViewCell1.swift; sourceTree = "<group>"; };
 		D1C6FE0A292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansArabic_Condensed-Regular.ttf"; sourceTree = "<group>"; };
-		D1FEE0D4293D08940013543A /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PTSerif-Regular.ttf"; path = "../../../../.Trash/GEELYApp/GEELYApp/fonts/PTSerif-Regular.ttf"; sourceTree = "<group>"; };
 		E4AE6D38628BB25043ABBA27 /* Pods-GEELYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEELYTests.release.xcconfig"; path = "Target Support Files/Pods-GEELYTests/Pods-GEELYTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDE77C3882667CCF7BD336B7 /* Pods-GEELY-GEELYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEELY-GEELYUITests.debug.xcconfig"; path = "Target Support Files/Pods-GEELY-GEELYUITests/Pods-GEELY-GEELYUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -246,7 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				D1C6FE0A292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf */,
-				D1FEE0D4293D08940013543A /* PTSerif-Regular.ttf */,
+				D1140AD72943536C0077C9BE /* PTSerif-Regular.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -367,7 +366,6 @@
 				D190D122292CAC6800B3E5C0 /* Main.storyboard in Resources */,
 				D1C6FE0B292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf in Resources */,
 				D154CD18293F43C100986B57 /* CarCollectionViewCell.xib in Resources */,
-				D1FEE0D5293D08940013543A /* PTSerif-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
