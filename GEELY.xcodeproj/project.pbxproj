@@ -22,6 +22,7 @@
 		D157941A2940A59C00B2602A /* CarVideosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15794182940A59C00B2602A /* CarVideosTableViewCell.xib */; };
 		D15C24432940A2C9001232E7 /* CarVideosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C24412940A2C9001232E7 /* CarVideosController.swift */; };
 		D189D260294A030000D20D2E /* HomeServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189D25F294A030000D20D2E /* HomeServicesManager.swift */; };
+		D189D265294B3BA700D20D2E /* GeelyLogInPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189D264294B3BA700D20D2E /* GeelyLogInPageViewController.swift */; };
 		D190D11B292CAC6800B3E5C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D11A292CAC6800B3E5C0 /* AppDelegate.swift */; };
 		D190D11D292CAC6800B3E5C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D11C292CAC6800B3E5C0 /* SceneDelegate.swift */; };
 		D190D11F292CAC6800B3E5C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D11E292CAC6800B3E5C0 /* HomeViewController.swift */; };
@@ -75,6 +76,7 @@
 		D15794182940A59C00B2602A /* CarVideosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarVideosTableViewCell.xib; sourceTree = "<group>"; };
 		D15C24412940A2C9001232E7 /* CarVideosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVideosController.swift; sourceTree = "<group>"; };
 		D189D25F294A030000D20D2E /* HomeServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesManager.swift; sourceTree = "<group>"; };
+		D189D264294B3BA700D20D2E /* GeelyLogInPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeelyLogInPageViewController.swift; sourceTree = "<group>"; };
 		D190D117292CAC6800B3E5C0 /* GEELY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GEELY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D190D11A292CAC6800B3E5C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D190D11C292CAC6800B3E5C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 			path = CarVideos;
 			sourceTree = "<group>";
 		};
+		D189D263294B3B6700D20D2E /* LogInPage */ = {
+			isa = PBXGroup;
+			children = (
+				D189D264294B3BA700D20D2E /* GeelyLogInPageViewController.swift */,
+			);
+			path = LogInPage;
+			sourceTree = "<group>";
+		};
 		D190D10E292CAC6800B3E5C0 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +261,7 @@
 		D190D14A292CACED00B3E5C0 /* GeelyUI */ = {
 			isa = PBXGroup;
 			children = (
+				D189D263294B3B6700D20D2E /* LogInPage */,
 				D1C6FE01292E0F9500C01390 /* Main */,
 				D190D14C292CACFF00B3E5C0 /* Home */,
 				D15C24402940A240001232E7 /* CarVideos */,
@@ -557,6 +568,7 @@
 				D190D14E292CB3E700B3E5C0 /* TabBarController.swift in Sources */,
 				D1C6FE03292E20AE00C01390 /* servicesCollViewCell1.swift in Sources */,
 				D1423AAD2947631200857FBA /* CarVideosServicesManager.swift in Sources */,
+				D189D265294B3BA700D20D2E /* GeelyLogInPageViewController.swift in Sources */,
 				D154CD17293F43C100986B57 /* CarCollectionViewCell.swift in Sources */,
 				D154CD14293E11BF00986B57 /* CarVideosData.swift in Sources */,
 				D15C24432940A2C9001232E7 /* CarVideosController.swift in Sources */,

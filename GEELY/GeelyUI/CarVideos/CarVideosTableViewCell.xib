@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jgy-Hi-3hx">
-                        <rect key="frame" x="-24" y="-15" width="490" height="180"/>
+                        <rect key="frame" x="-24" y="-15" width="500" height="160"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="180" id="DCl-gt-FZ3"/>
+                            <constraint firstAttribute="height" constant="160" id="DCl-gt-FZ3"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ein-SX-zGE">
-                        <rect key="frame" x="104" y="173" width="301" height="33"/>
+                        <rect key="frame" x="113" y="153" width="301" height="33"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="301" id="DYT-6O-Xad"/>
                             <constraint firstAttribute="height" constant="33" id="keG-Bo-ILS"/>
@@ -51,8 +51,8 @@
                             <constraint firstAttribute="width" constant="24" id="cJz-sV-z9r"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZr-sr-ZvP">
-                        <rect key="frame" x="20" y="185" width="385" height="78"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZr-sr-ZvP">
+                        <rect key="frame" x="30" y="165" width="385" height="78"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="78" id="28Z-WY-l7T"/>
                             <constraint firstAttribute="width" constant="385" id="JoR-lB-6eD"/>
@@ -64,18 +64,18 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="OZr-sr-ZvP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3uh-5j-sCG"/>
-                    <constraint firstItem="Ein-SX-zGE" firstAttribute="top" secondItem="zas-6r-h2N" secondAttribute="bottom" constant="96" id="4M8-jZ-Vyc"/>
+                    <constraint firstItem="OZr-sr-ZvP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="3uh-5j-sCG"/>
+                    <constraint firstItem="Ein-SX-zGE" firstAttribute="top" secondItem="zas-6r-h2N" secondAttribute="bottom" constant="76" id="4M8-jZ-Vyc"/>
                     <constraint firstItem="Jgy-Hi-3hx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-24" id="8v0-EE-gaT"/>
-                    <constraint firstAttribute="bottom" secondItem="OZr-sr-ZvP" secondAttribute="bottom" constant="9" id="DqU-U8-OJK"/>
+                    <constraint firstAttribute="bottom" secondItem="OZr-sr-ZvP" secondAttribute="bottom" constant="29" id="DqU-U8-OJK"/>
                     <constraint firstItem="Jgy-Hi-3hx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-15" id="H5F-56-Sjl"/>
-                    <constraint firstAttribute="trailing" secondItem="OZr-sr-ZvP" secondAttribute="trailing" constant="30" id="IZX-mZ-a0Y"/>
+                    <constraint firstAttribute="trailing" secondItem="OZr-sr-ZvP" secondAttribute="trailing" constant="20" id="IZX-mZ-a0Y"/>
                     <constraint firstItem="OZr-sr-ZvP" firstAttribute="top" secondItem="Ein-SX-zGE" secondAttribute="bottom" constant="-21" id="IbQ-xP-aSO"/>
-                    <constraint firstAttribute="trailing" secondItem="Jgy-Hi-3hx" secondAttribute="trailing" constant="-31" id="NeJ-06-gH2"/>
+                    <constraint firstAttribute="trailing" secondItem="Jgy-Hi-3hx" secondAttribute="trailing" constant="-41" id="NeJ-06-gH2"/>
                     <constraint firstAttribute="trailingMargin" secondItem="vzH-sE-fpW" secondAttribute="trailing" constant="142" id="VUT-hu-bAa"/>
-                    <constraint firstAttribute="trailing" secondItem="Ein-SX-zGE" secondAttribute="trailing" constant="30" id="WKc-zc-aVD"/>
-                    <constraint firstItem="Ein-SX-zGE" firstAttribute="top" secondItem="vzH-sE-fpW" secondAttribute="bottom" constant="73" id="Yfq-gj-9YF"/>
-                    <constraint firstAttribute="bottom" secondItem="Jgy-Hi-3hx" secondAttribute="bottom" constant="107" id="dxm-qL-ddQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ein-SX-zGE" secondAttribute="trailing" constant="21" id="WKc-zc-aVD"/>
+                    <constraint firstItem="Ein-SX-zGE" firstAttribute="top" secondItem="vzH-sE-fpW" secondAttribute="bottom" constant="53" id="Yfq-gj-9YF"/>
+                    <constraint firstAttribute="bottom" secondItem="Jgy-Hi-3hx" secondAttribute="bottom" constant="127" id="dxm-qL-ddQ"/>
                     <constraint firstAttribute="trailing" secondItem="zas-6r-h2N" secondAttribute="trailing" constant="185" id="xS6-by-7hM"/>
                 </constraints>
             </tableViewCellContentView>

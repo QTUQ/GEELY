@@ -29,9 +29,9 @@ class CarVideosTableViewCell: UITableViewCell {
     // MARK: -manipulation Method (labels, images)
     func adjustLabels() {
         LabelName.font = UIFont(name: "PTSerif-Regular", size: .zero)
-        LabelDescription.font = UIFont(name: "PTSerif-Regular", size: 15)
+        LabelDescription.font = UIFont(name: "PTSerif-Regular", size: 12)
         LabelName.sizeToFit()
-        LabelDescription.sizeToFit()
+        LabelDescription.numberOfLines = Int(2.5)
         LabelName.font = UIFont.boldSystemFont(ofSize: 15)
         LabelName.sizeThatFits(CGSize(width: 310, height: 33))
         LabelDescription.sizeThatFits(CGSize(width: 385, height: 78))
