@@ -158,10 +158,10 @@
             </objects>
             <point key="canvasLocation" x="2396" y="830"/>
         </scene>
-        <!--Car Detailed Controller-->
+        <!--Car Videos Controller-->
         <scene sceneID="hjh-2W-eXM">
             <objects>
-                <tableViewController id="RAd-qN-QAs" customClass="CarDetailedController" customModule="GEELY" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RAd-qN-QAs" customClass="CarVideosController" customModule="GEELY" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7us-yk-j3K">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Wqo-9i-d2y"/>
                     <connections>
-                        <outlet property="CarDetTableView" destination="7us-yk-j3K" id="Oe9-Uw-gDb"/>
+                        <outlet property="CarVideosTableView" destination="7us-yk-j3K" id="qUd-TT-UEY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r39-08-Uqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -225,9 +225,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GBx-jx-GKN">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GBx-jx-GKN">
                                 <rect key="frame" x="0.0" y="632" width="393" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MHg-YV-FbU">
                                     <size key="itemSize" width="128" height="128"/>
@@ -250,13 +249,25 @@
                         <viewLayoutGuide key="safeArea" id="0dB-HG-Rxp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ohn-2z-fJe" firstAttribute="top" secondItem="aPj-67-5if" secondAttribute="bottom" constant="8" id="0CV-nC-MlQ"/>
+                            <constraint firstItem="aPj-67-5if" firstAttribute="centerX" secondItem="ITW-kd-kQE" secondAttribute="centerX" id="5TM-pE-RBT"/>
                             <constraint firstItem="0dB-HG-Rxp" firstAttribute="trailing" secondItem="ohn-2z-fJe" secondAttribute="trailing" constant="139" id="5Un-4l-OKo"/>
+                            <constraint firstItem="ohn-2z-fJe" firstAttribute="top" secondItem="aPj-67-5if" secondAttribute="bottom" constant="8" symbolic="YES" id="6wt-8j-Xp4"/>
                             <constraint firstItem="aPj-67-5if" firstAttribute="trailing" secondItem="ITW-kd-kQE" secondAttribute="trailingMargin" id="AyH-6Z-bHW"/>
+                            <constraint firstItem="aPj-67-5if" firstAttribute="top" secondItem="0dB-HG-Rxp" secondAttribute="top" constant="75" id="F5i-CV-Jfj"/>
+                            <constraint firstItem="aPj-67-5if" firstAttribute="leading" secondItem="0dB-HG-Rxp" secondAttribute="leading" constant="16" id="PTO-Qb-KAT"/>
+                            <constraint firstItem="GBx-jx-GKN" firstAttribute="centerX" secondItem="aPj-67-5if" secondAttribute="centerX" id="S7G-t9-TJL"/>
+                            <constraint firstItem="0dB-HG-Rxp" firstAttribute="trailing" secondItem="aPj-67-5if" secondAttribute="trailing" constant="16" id="Ths-hP-Kdz"/>
                             <constraint firstItem="aPj-67-5if" firstAttribute="leading" secondItem="ITW-kd-kQE" secondAttribute="leadingMargin" id="WCr-m3-XAR"/>
                             <constraint firstItem="ohn-2z-fJe" firstAttribute="top" secondItem="aPj-67-5if" secondAttribute="bottom" constant="8" id="Wms-Vm-tiA"/>
+                            <constraint firstItem="aPj-67-5if" firstAttribute="top" secondItem="0dB-HG-Rxp" secondAttribute="top" constant="75" id="bGQ-rc-207"/>
+                            <constraint firstItem="GBx-jx-GKN" firstAttribute="leading" secondItem="ITW-kd-kQE" secondAttribute="leading" id="cGb-1k-t7z"/>
                             <constraint firstAttribute="bottom" secondItem="ohn-2z-fJe" secondAttribute="bottom" constant="311" id="fOO-OS-9MX"/>
+                            <constraint firstItem="GBx-jx-GKN" firstAttribute="top" secondItem="aPj-67-5if" secondAttribute="bottom" constant="99" id="jcf-BY-f9W"/>
+                            <constraint firstItem="aPj-67-5if" firstAttribute="centerX" secondItem="ITW-kd-kQE" secondAttribute="centerX" id="kpO-Mc-3cz"/>
                             <constraint firstItem="aPj-67-5if" firstAttribute="top" secondItem="0dB-HG-Rxp" secondAttribute="top" constant="75" id="t88-fP-R7K"/>
                             <constraint firstItem="ohn-2z-fJe" firstAttribute="leading" secondItem="0dB-HG-Rxp" secondAttribute="leading" constant="117" id="tVc-MS-Wqc"/>
+                            <constraint firstItem="0dB-HG-Rxp" firstAttribute="bottom" secondItem="GBx-jx-GKN" secondAttribute="bottom" constant="18" id="yuY-Zh-lWA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DHW-T8-Uat">
@@ -283,8 +294,8 @@
         <image name="Group 12747" width="21" height="21.333333969116211"/>
         <image name="Group 12748" width="21.333333969116211" height="21"/>
         <image name="Services icon" width="19" height="19"/>
-        <image name="bell" catalog="system" width="125" height="128"/>
         <image name="bell" width="128" height="128"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
         <image name="home icon" width="21.666666030883789" height="19.333333969116211"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <namedColor name="LightBlue">

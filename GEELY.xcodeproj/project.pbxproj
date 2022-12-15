@@ -10,13 +10,18 @@
 		69A624158F7F72A01082734D /* Pods_GEELY_GEELYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6CA181DE57E52F7CDD7C489 /* Pods_GEELY_GEELYUITests.framework */; };
 		8739077C026F1A03211000A5 /* Pods_GEELY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A81AABEB7DF79F677BF3E3 /* Pods_GEELY.framework */; };
 		922CE85A4A18552D1E55876E /* Pods_GEELYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BB8FA711F0D79BD2AC16F4 /* Pods_GEELYTests.framework */; };
-		D154CD12293E0DC700986B57 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154CD11293E0DC700986B57 /* APIHandler.swift */; };
-		D154CD14293E11BF00986B57 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154CD13293E11BF00986B57 /* Data.swift */; };
+		D10AEE53294725E1004E43EB /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10AEE52294725E1004E43EB /* ServicesManager.swift */; };
+		D10AEE5529472935004E43EB /* DownloadUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10AEE5429472935004E43EB /* DownloadUIImageView.swift */; };
+		D1423AAD2947631200857FBA /* CarVideosServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1423AAC2947631200857FBA /* CarVideosServicesManager.swift */; };
+		D1423AAF29478C1D00857FBA /* GeneralTargetTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1423AAE29478C1D00857FBA /* GeneralTargetTypes.swift */; };
+		D1423AB1294849B600857FBA /* GEELYRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1423AB0294849B600857FBA /* GEELYRequests.swift */; };
+		D154CD14293E11BF00986B57 /* CarVideosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154CD13293E11BF00986B57 /* CarVideosData.swift */; };
 		D154CD17293F43C100986B57 /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D154CD15293F43C100986B57 /* CarCollectionViewCell.swift */; };
 		D154CD18293F43C100986B57 /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D154CD16293F43C100986B57 /* CarCollectionViewCell.xib */; };
-		D15794192940A59C00B2602A /* CarDeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15794172940A59C00B2602A /* CarDeTableViewCell.swift */; };
-		D157941A2940A59C00B2602A /* CarDeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15794182940A59C00B2602A /* CarDeTableViewCell.xib */; };
-		D15C24432940A2C9001232E7 /* CarDetailedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C24412940A2C9001232E7 /* CarDetailedController.swift */; };
+		D15794192940A59C00B2602A /* CarVideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15794172940A59C00B2602A /* CarVideosTableViewCell.swift */; };
+		D157941A2940A59C00B2602A /* CarVideosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D15794182940A59C00B2602A /* CarVideosTableViewCell.xib */; };
+		D15C24432940A2C9001232E7 /* CarVideosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15C24412940A2C9001232E7 /* CarVideosController.swift */; };
+		D189D260294A030000D20D2E /* HomeServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D189D25F294A030000D20D2E /* HomeServicesManager.swift */; };
 		D190D11B292CAC6800B3E5C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D11A292CAC6800B3E5C0 /* AppDelegate.swift */; };
 		D190D11D292CAC6800B3E5C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D11C292CAC6800B3E5C0 /* SceneDelegate.swift */; };
 		D190D11F292CAC6800B3E5C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D11E292CAC6800B3E5C0 /* HomeViewController.swift */; };
@@ -57,14 +62,19 @@
 		78BB8FA711F0D79BD2AC16F4 /* Pods_GEELYTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEELYTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A81AABEB7DF79F677BF3E3 /* Pods_GEELY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEELY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CA181DE57E52F7CDD7C489 /* Pods_GEELY_GEELYUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GEELY_GEELYUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10AEE52294725E1004E43EB /* ServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		D10AEE5429472935004E43EB /* DownloadUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUIImageView.swift; sourceTree = "<group>"; };
 		D1140AD72943536C0077C9BE /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PTSerif-Regular.ttf"; path = "../../../../Desktop/fonts/PT_Serif/PTSerif-Regular.ttf"; sourceTree = "<group>"; };
-		D154CD11293E0DC700986B57 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
-		D154CD13293E11BF00986B57 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D1423AAC2947631200857FBA /* CarVideosServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVideosServicesManager.swift; sourceTree = "<group>"; };
+		D1423AAE29478C1D00857FBA /* GeneralTargetTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTargetTypes.swift; sourceTree = "<group>"; };
+		D1423AB0294849B600857FBA /* GEELYRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEELYRequests.swift; sourceTree = "<group>"; };
+		D154CD13293E11BF00986B57 /* CarVideosData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVideosData.swift; sourceTree = "<group>"; };
 		D154CD15293F43C100986B57 /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
 		D154CD16293F43C100986B57 /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
-		D15794172940A59C00B2602A /* CarDeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDeTableViewCell.swift; sourceTree = "<group>"; };
-		D15794182940A59C00B2602A /* CarDeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarDeTableViewCell.xib; sourceTree = "<group>"; };
-		D15C24412940A2C9001232E7 /* CarDetailedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailedController.swift; sourceTree = "<group>"; };
+		D15794172940A59C00B2602A /* CarVideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVideosTableViewCell.swift; sourceTree = "<group>"; };
+		D15794182940A59C00B2602A /* CarVideosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarVideosTableViewCell.xib; sourceTree = "<group>"; };
+		D15C24412940A2C9001232E7 /* CarVideosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVideosController.swift; sourceTree = "<group>"; };
+		D189D25F294A030000D20D2E /* HomeServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServicesManager.swift; sourceTree = "<group>"; };
 		D190D117292CAC6800B3E5C0 /* GEELY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GEELY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D190D11A292CAC6800B3E5C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D190D11C292CAC6800B3E5C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,23 +147,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D154CD10293E0DB600986B57 /* Servcies */ = {
+		D10AEE562947295C004E43EB /* GeelyData */ = {
 			isa = PBXGroup;
 			children = (
-				D154CD11293E0DC700986B57 /* APIHandler.swift */,
-				D154CD13293E11BF00986B57 /* Data.swift */,
+				D154CD13293E11BF00986B57 /* CarVideosData.swift */,
 			);
-			path = Servcies;
+			path = GeelyData;
 			sourceTree = "<group>";
 		};
-		D15C24402940A240001232E7 /* CarDetailed */ = {
+		D1423AB2294849F500857FBA /* TargetTypes */ = {
 			isa = PBXGroup;
 			children = (
-				D15C24412940A2C9001232E7 /* CarDetailedController.swift */,
-				D15794172940A59C00B2602A /* CarDeTableViewCell.swift */,
-				D15794182940A59C00B2602A /* CarDeTableViewCell.xib */,
+				D1423AAE29478C1D00857FBA /* GeneralTargetTypes.swift */,
+				D1423AB0294849B600857FBA /* GEELYRequests.swift */,
 			);
-			path = CarDetailed;
+			path = TargetTypes;
+			sourceTree = "<group>";
+		};
+		D1423AB329484A8100857FBA /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				D10AEE52294725E1004E43EB /* ServicesManager.swift */,
+				D1423AAC2947631200857FBA /* CarVideosServicesManager.swift */,
+				D189D25F294A030000D20D2E /* HomeServicesManager.swift */,
+				D10AEE5429472935004E43EB /* DownloadUIImageView.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		D154CD10293E0DB600986B57 /* GeelyServcies */ = {
+			isa = PBXGroup;
+			children = (
+				D1423AB2294849F500857FBA /* TargetTypes */,
+				D10AEE562947295C004E43EB /* GeelyData */,
+				D1423AB329484A8100857FBA /* NetworkManager */,
+			);
+			path = GeelyServcies;
+			sourceTree = "<group>";
+		};
+		D15C24402940A240001232E7 /* CarVideos */ = {
+			isa = PBXGroup;
+			children = (
+				D15C24412940A2C9001232E7 /* CarVideosController.swift */,
+				D15794172940A59C00B2602A /* CarVideosTableViewCell.swift */,
+				D15794182940A59C00B2602A /* CarVideosTableViewCell.xib */,
+			);
+			path = CarVideos;
 			sourceTree = "<group>";
 		};
 		D190D10E292CAC6800B3E5C0 = {
@@ -184,7 +223,7 @@
 				D190D11A292CAC6800B3E5C0 /* AppDelegate.swift */,
 				D190D11C292CAC6800B3E5C0 /* SceneDelegate.swift */,
 				D1C6FE04292E3D1E00C01390 /* fonts */,
-				D154CD10293E0DB600986B57 /* Servcies */,
+				D154CD10293E0DB600986B57 /* GeelyServcies */,
 				D190D14A292CACED00B3E5C0 /* GeelyUI */,
 				D190D123292CAC6900B3E5C0 /* Assets.xcassets */,
 				D190D128292CAC6900B3E5C0 /* Info.plist */,
@@ -214,7 +253,7 @@
 			children = (
 				D1C6FE01292E0F9500C01390 /* Main */,
 				D190D14C292CACFF00B3E5C0 /* Home */,
-				D15C24402940A240001232E7 /* CarDetailed */,
+				D15C24402940A240001232E7 /* CarVideos */,
 			);
 			path = GeelyUI;
 			sourceTree = "<group>";
@@ -360,7 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D157941A2940A59C00B2602A /* CarDeTableViewCell.xib in Resources */,
+				D157941A2940A59C00B2602A /* CarVideosTableViewCell.xib in Resources */,
 				D190D127292CAC6900B3E5C0 /* LaunchScreen.storyboard in Resources */,
 				D190D124292CAC6900B3E5C0 /* Assets.xcassets in Resources */,
 				D190D122292CAC6800B3E5C0 /* Main.storyboard in Resources */,
@@ -512,15 +551,20 @@
 			files = (
 				D190D11F292CAC6800B3E5C0 /* HomeViewController.swift in Sources */,
 				D190D11B292CAC6800B3E5C0 /* AppDelegate.swift in Sources */,
-				D154CD12293E0DC700986B57 /* APIHandler.swift in Sources */,
+				D1423AAF29478C1D00857FBA /* GeneralTargetTypes.swift in Sources */,
+				D1423AB1294849B600857FBA /* GEELYRequests.swift in Sources */,
 				D190D150292CC3CD00B3E5C0 /* CostumTabBar.swift in Sources */,
 				D190D14E292CB3E700B3E5C0 /* TabBarController.swift in Sources */,
 				D1C6FE03292E20AE00C01390 /* servicesCollViewCell1.swift in Sources */,
+				D1423AAD2947631200857FBA /* CarVideosServicesManager.swift in Sources */,
 				D154CD17293F43C100986B57 /* CarCollectionViewCell.swift in Sources */,
-				D154CD14293E11BF00986B57 /* Data.swift in Sources */,
-				D15C24432940A2C9001232E7 /* CarDetailedController.swift in Sources */,
+				D154CD14293E11BF00986B57 /* CarVideosData.swift in Sources */,
+				D15C24432940A2C9001232E7 /* CarVideosController.swift in Sources */,
 				D190D11D292CAC6800B3E5C0 /* SceneDelegate.swift in Sources */,
-				D15794192940A59C00B2602A /* CarDeTableViewCell.swift in Sources */,
+				D189D260294A030000D20D2E /* HomeServicesManager.swift in Sources */,
+				D10AEE5529472935004E43EB /* DownloadUIImageView.swift in Sources */,
+				D15794192940A59C00B2602A /* CarVideosTableViewCell.swift in Sources */,
+				D10AEE53294725E1004E43EB /* ServicesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
