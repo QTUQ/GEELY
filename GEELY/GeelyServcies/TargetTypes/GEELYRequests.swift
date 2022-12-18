@@ -15,7 +15,7 @@ enum GeelyNetworking {
 extension GeelyNetworking: TargetType {
     var domian: String {
         switch self {
-        default:
+        case .getLobbieVideos:
             return "https://testservice.geely.co.il///api"
         }
     }
@@ -39,7 +39,7 @@ extension GeelyNetworking: TargetType {
     }
     var headers: [String : String]? {
         switch self {
-        default:
+        case .getLobbieVideos:
             return [:]
         }
     }

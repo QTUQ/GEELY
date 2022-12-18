@@ -1,16 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "backwardArrowIconBlack.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Rectangle 362@2x.png",
+      "filename" : "backwardArrowIconBlack@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Rectangle 362@3x.png",
+      "filename" : "backwardArrowIconBlack@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -13,9 +13,8 @@ import AVKit
 class CarVideosTableViewCell: UITableViewCell {
     //MARK: -Variables
     static let id = "CarVideosTableViewCell"
-    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var CarImage: UIImageView!
-    @IBOutlet weak var VideoImage: UIImageView!
+    @IBOutlet weak var playVideoIcon: UIImageView!
     @IBOutlet weak var LabelName: UILabel!
     @IBOutlet weak var LabelDescription: UILabel!
     override func awakeFromNib() {
@@ -37,12 +36,7 @@ class CarVideosTableViewCell: UITableViewCell {
         LabelDescription.sizeThatFits(CGSize(width: 385, height: 78))
     }
     func adjustImages() {
-        VideoImage.clipsToBounds = true
-        webView.clipsToBounds = true
-        webView.layer.cornerRadius = 35
-        webView.layer.opacity = 0.6
-        let VideoImagee = UIImage(systemName: "play.fill")
-        VideoImage.image = VideoImagee!.maskWithGradientColor(color: UIColor.red)
+        playVideoIcon.image = UIImage(named: "playVideoIcon")
     }
     //MARK: -implement the data in the cells method
     func cellDataSetup(carData: LobbyVideos) {

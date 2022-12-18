@@ -12,6 +12,7 @@
 		922CE85A4A18552D1E55876E /* Pods_GEELYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78BB8FA711F0D79BD2AC16F4 /* Pods_GEELYTests.framework */; };
 		D10AEE53294725E1004E43EB /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10AEE52294725E1004E43EB /* ServicesManager.swift */; };
 		D10AEE5529472935004E43EB /* DownloadUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10AEE5429472935004E43EB /* DownloadUIImageView.swift */; };
+		D134FAD7294ED77D00A458D7 /* LimitLengthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D134FAD6294ED77D00A458D7 /* LimitLengthTextField.swift */; };
 		D1423AAD2947631200857FBA /* CarVideosServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1423AAC2947631200857FBA /* CarVideosServicesManager.swift */; };
 		D1423AAF29478C1D00857FBA /* GeneralTargetTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1423AAE29478C1D00857FBA /* GeneralTargetTypes.swift */; };
 		D1423AB1294849B600857FBA /* GEELYRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1423AB0294849B600857FBA /* GEELYRequests.swift */; };
@@ -34,6 +35,7 @@
 		D190D13E292CAC6900B3E5C0 /* GEELYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D13D292CAC6900B3E5C0 /* GEELYUITestsLaunchTests.swift */; };
 		D190D14E292CB3E700B3E5C0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D14D292CB3E700B3E5C0 /* TabBarController.swift */; };
 		D190D150292CC3CD00B3E5C0 /* CostumTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190D14F292CC3CD00B3E5C0 /* CostumTabBar.swift */; };
+		D1A39658294B8AC6008B4B05 /* GeelyVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A39657294B8AC6008B4B05 /* GeelyVerificationViewController.swift */; };
 		D1C6FE03292E20AE00C01390 /* servicesCollViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C6FE02292E20AE00C01390 /* servicesCollViewCell1.swift */; };
 		D1C6FE0B292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1C6FE0A292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,7 @@
 		D10AEE52294725E1004E43EB /* ServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
 		D10AEE5429472935004E43EB /* DownloadUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUIImageView.swift; sourceTree = "<group>"; };
 		D1140AD72943536C0077C9BE /* PTSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PTSerif-Regular.ttf"; path = "../../../../Desktop/fonts/PT_Serif/PTSerif-Regular.ttf"; sourceTree = "<group>"; };
+		D134FAD6294ED77D00A458D7 /* LimitLengthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitLengthTextField.swift; sourceTree = "<group>"; };
 		D1423AAC2947631200857FBA /* CarVideosServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVideosServicesManager.swift; sourceTree = "<group>"; };
 		D1423AAE29478C1D00857FBA /* GeneralTargetTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTargetTypes.swift; sourceTree = "<group>"; };
 		D1423AB0294849B600857FBA /* GEELYRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEELYRequests.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		D190D13D292CAC6900B3E5C0 /* GEELYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEELYUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D190D14D292CB3E700B3E5C0 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D190D14F292CC3CD00B3E5C0 /* CostumTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostumTabBar.swift; sourceTree = "<group>"; };
+		D1A39657294B8AC6008B4B05 /* GeelyVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeelyVerificationViewController.swift; sourceTree = "<group>"; };
 		D1C6FE02292E20AE00C01390 /* servicesCollViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesCollViewCell1.swift; sourceTree = "<group>"; };
 		D1C6FE0A292E3E8300C01390 /* NotoSansArabic_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansArabic_Condensed-Regular.ttf"; sourceTree = "<group>"; };
 		E4AE6D38628BB25043ABBA27 /* Pods-GEELYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GEELYTests.release.xcconfig"; path = "Target Support Files/Pods-GEELYTests/Pods-GEELYTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				D189D264294B3BA700D20D2E /* GeelyLogInPageViewController.swift */,
+				D1A39657294B8AC6008B4B05 /* GeelyVerificationViewController.swift */,
+				D134FAD6294ED77D00A458D7 /* LimitLengthTextField.swift */,
 			);
 			path = LogInPage;
 			sourceTree = "<group>";
@@ -567,6 +573,7 @@
 				D190D150292CC3CD00B3E5C0 /* CostumTabBar.swift in Sources */,
 				D190D14E292CB3E700B3E5C0 /* TabBarController.swift in Sources */,
 				D1C6FE03292E20AE00C01390 /* servicesCollViewCell1.swift in Sources */,
+				D134FAD7294ED77D00A458D7 /* LimitLengthTextField.swift in Sources */,
 				D1423AAD2947631200857FBA /* CarVideosServicesManager.swift in Sources */,
 				D189D265294B3BA700D20D2E /* GeelyLogInPageViewController.swift in Sources */,
 				D154CD17293F43C100986B57 /* CarCollectionViewCell.swift in Sources */,
@@ -576,6 +583,7 @@
 				D189D260294A030000D20D2E /* HomeServicesManager.swift in Sources */,
 				D10AEE5529472935004E43EB /* DownloadUIImageView.swift in Sources */,
 				D15794192940A59C00B2602A /* CarVideosTableViewCell.swift in Sources */,
+				D1A39658294B8AC6008B4B05 /* GeelyVerificationViewController.swift in Sources */,
 				D10AEE53294725E1004E43EB /* ServicesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

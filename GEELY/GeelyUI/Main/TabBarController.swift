@@ -14,6 +14,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         setUpMiddButton()
     }
+    
     // MARK: - Creat a costum Button
     func setUpMiddButton() {
         let button = UIButton()
